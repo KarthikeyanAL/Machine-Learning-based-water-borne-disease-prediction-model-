@@ -4,7 +4,9 @@ waterborne diseases. The base paper compares the performance of different machin
 algorithms for predicting waterborne disease. The proposed architecture includes data preprocessing, feature selection, and machine learning-based classification. The dataset used in
 the base paper contains 19 attributes. The Typhoid dataset has 68624 entries and malaria has
 22,916 entries.
-1.1.Data pre-processing:
+
+**1.1.Data pre-processing:**
+
 The pre-processing procedures are applied to both the typhoid and malaria dataset. The preprocessing procedures include Data cleaning, Data balancing, Data transformation, and Data
 normalization.
 Data cleaning is done by the median imputation approach. The original dataset had many
@@ -20,7 +22,9 @@ encoding and label encoding approaches to convert the categorical data into nume
 Data normalization is performed by using the z-score method to transform the features to be on 
 a similar scale. It is the process of organizing data in a structured manner by applying certain 
 techniques to ensure that data is consistent, accurate, and standardized.
-1.2.Feature Selection:
+
+**1.2.Feature Selection:**
+
 The original dataset contains 19 features, out of which the top 7 features are selected by feature
 selection. Feature selection is performed to select the most suitable features to train the model.
 It also improves the accuracy of the models. By focusing on the most important factors and
@@ -28,10 +32,11 @@ removing the redundant and irrelevant ones, it also improves the algorithm’s a
 results. In the base paper, it is performed using the random forest feature selection method. It
 is a popular method for feature selection because it is effective at identifying the most relevant
 features while also being relatively computationally efficient. RandomForest feature selection
-2
 is performed by training a random forest model on the entire dataset and then the importance of
 every feature isranked based on the feature importance scores produced bythe model.
-1.3.Modelselection:
+
+**1.3.Modelselection:**
+
 The dataset is tested and trained by various machine learning models such as RF, DT, KNN,
 logistic regression and SVM using ten cross-validation methods using Sklearn python library.
 These algorithms are easily explainable, interpretable, implemented and used in many fields
